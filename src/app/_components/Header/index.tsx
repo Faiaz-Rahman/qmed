@@ -16,7 +16,7 @@ export default function Header() {
 					<p className="font-extralight text-5xl tracking-wide">QMED</p>
 					{navLinks.map((_nav, _nav_ind) => {
 						return (
-							<div className="h-11">
+							<div key={`${_nav}_${_nav_ind}`} className="h-11">
 								<div
 									className="h-10 flex items-center 
                                 hover:cursor-pointer px-2 text-base"
